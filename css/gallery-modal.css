@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Kumbh+Sans&display=swap");
+.modal-gallery {
+  width: 446px;
+}
+.modal-gallery__background {
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.modal-gallery__image-container {
+  background-image: url("../images/image-product-1.jpg");
+  height: 446px;
+  background-size: cover;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+.modal-gallery__thumnails {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-gallery__thumnail {
+  width: 90px;
+  border-radius: 16px;
+}
+.modal-gallery__thumnail:hover {
+  cursor: pointer;
+  border: 2px solid hsl(26deg, 100%, 55%);
+}/*# sourceMappingURL=gallery-modal.css.map */

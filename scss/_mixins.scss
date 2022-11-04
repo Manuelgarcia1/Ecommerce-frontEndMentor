@@ -1,0 +1,61 @@
+@use 'variables' as C;
+
+@mixin modal-background{
+    background-color: C.$Black-modal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: none;
+}
+
+@mixin image-btn($top, $left, $showDekstop){
+    background-color: C.$White;
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: $top;
+    left: $left;
+    &:hover{
+        cursor: pointer;
+    }
+    @media (min-width: 1115px){
+        @if ($showDekstop == true){
+            display: block;
+        }@else{
+            display: none;
+        }
+    }
+}
+
+@mixin changeNumber ($pv, $ph){
+    width: 25px;
+    height: 100%;
+    padding: $pv $ph;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin button {
+    background-color: C.$Orange ;
+    width: 100%;
+    height: 57px;
+    border-radius: 8px;
+    border: none;
+    color: C.$White;
+    font-size: 0.9em;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    &:hover{
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}

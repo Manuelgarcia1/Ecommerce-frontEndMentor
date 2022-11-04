@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "sass": "^1.55.0"
+  },
+  "name": "ecommerce-product-page-main",
+  "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

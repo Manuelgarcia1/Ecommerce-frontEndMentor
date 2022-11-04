@@ -1,0 +1,27 @@
+@use 'variables' as C;
+@use 'mixins';
+
+.input{
+    height: 57px;
+    display: flex;
+    align-items: center;     //configura que no cambie el tamaño del - y se centre bien
+    justify-content: space-between;
+    background-color: C.$Light-grayish-blue;
+    &__minus{
+        @include mixins.changeNumber(24px,5px);
+    }
+    &__number{
+        width: 100%;
+        border: none;
+        background-color: C.$Light-grayish-blue;
+        font-size: 1.2em;
+        font-weight: 700;
+        font-family: C.$Font;
+        text-align: center;
+        outline: none;
+    }
+
+    &__plus{
+        @include mixins.changeNumber(19px,3px);
+    }
+}
